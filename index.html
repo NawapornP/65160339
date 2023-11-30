@@ -1,27 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Workshop #HTML - FORM </h1>
-    <form>
-        <label for="ชื่อ">ชื่อ</label>&emsp;&emsp;&emsp;&emsp;&emsp;
-        <input type="ชื่อ">
-        <br>
-        <label for="สกุล">สกุล</label>&emsp;&emsp;&emsp;&emsp;&ensp;
-        <input type="สกุล">
-        <br>
-        <label for="วัน/เดือน/ปีเกิด">วัน/เดือน/ปีเกิด</label>&nbsp;
-        <input type="วัน/เดือน/ปีเกิด">
-        <br>
-        <label for="อายุ">อายุ</label>&emsp;&emsp;&emsp;&emsp;&ensp;
-        <input type="อายุ">
-        <br>
-        <label for="เพศ">เพศ</label>
-        
-    </form>
-</body>
-</html> 
+<html>
+        <h1>Workshop #HTML - FORM</h1>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>ชื่อ</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                        <tr>
+                            <td>สกุล</td>
+                            <td><input type="text"/></td>
+                        </tr>
+                        <tr>
+                    <td>วัน/เดือน/ปีเกิด</td>
+                    <td><input type="date" /></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>อายุ</td>
+                        <td><input type="text"/></td>
+                    </tr>
+                    <tr>
+                    <td>เพศ</td>
+                    <td>
+                        <input id="ชาย"
+                               type="radio" 
+                               name="same_radio"/>
+                        <label for="radio_a">ชาย</label>
+                        <input id="หญิง"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">หญิง</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        รูป
+                    </td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>ที่อยู่</td>
+                    <td><textarea rows="4" 
+                    placeholder="กรุณาป้อนข้อมูล"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        สีที่ชอบ
+                    </td>
+                    <td>
+                        <select>
+                            <option 
+                            value=""
+                            disabled 
+                            selected>-</option>
+                            <option>สีแดง</option>
+                            <option>สีเหลือง</option>
+                            <option>สีเขียว</option>
+                            <option>สีน้ำเงิน</option>
+                            <option>สีม่วง</option>
+                            <option>สีขาว</option>
+                            <option>สีดำ</option>
+                            <option>สีชมพู</option>
+                            <option>สีฟ้า</option>
+                            <option>สีส้ม</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>แนวเพลงที่ชอบ</td>
+                    <td>
+                        <input id="เพื่อชีวิต"
+                               type="radio" 
+                               name="same_radio"/>
+                        <label for="radio_a">เพื่อชีวิต</label>
+                        <input id="ลูกทุ่ง"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">ลูกทุ่ง</label>
+                        <input id="อื่นๆ"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">อื่นๆ</label>
+                </tr>
+                    <td>
+                        <br>
+                        <input type="checkbox"
+                        name="my_checkbox">ยินยอมให้เก็บข้อมูล
+               <br><br><br>
+                    </td>
+                </tr>
+            </table>
+                        <input type="reset" 
+                                value=" Reset">  
+                    &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp; 
+                            <input type="submit" 
+                                value=" Submit">
+            <br><br><br>
+        </form>
+    </body>
+</html>
