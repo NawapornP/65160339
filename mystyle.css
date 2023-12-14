@@ -1,23 +1,22 @@
 .box{
+    
     width: 400px;
     height: 400px;
-    color: #5D4037(255, 255, 255);
-    background-color:#B3E5FC(179, 229, 252);
+    display:table; 
+    color: #ffffff;
+    background-color:#B71C1C;
     text-align: center;
-    border: 5px dashed #B71C1C(183, 28, 28);
+    border: 5px dashed #5D4037;
     padding-top: 10px;
     margin: 50px 25px;
+    display: table-cell;
+    vertical-align: middle;
 }
-
 .box:hover{
-    background-color:#E1BEE7(225, 190, 231);
+    background-color:#009933;
 }
-div {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation-name: "R.png";
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
-}
+div:hover{
+    box-shadow: 10px 10px 5px grey;
+  }
+
+   
