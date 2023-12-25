@@ -9,8 +9,9 @@
         .scroll {
             width: 150px;
             height: 265px;
+            
             border: 1px solid black; 
-            overflow:scroll; 
+            overflow:auto; 
         }
     </style>
     <div class="scroll">
