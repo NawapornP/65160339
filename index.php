@@ -1,32 +1,29 @@
-<html>
-
-<head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <link rel="stylesheet" href="w3.css" />
 </head>
 
 <body>
     <?php $multi_x = 2; ?>
     <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
-    <table>
-        <tbody>
+    <style>
+        .scroll {
+            width: 150px;
+            height: 265px;
+            border: 1px solid black; 
+            overflow:scroll; 
+        }
+    </style>
+    <div class="scroll">
             <tr>
             <?php
             if( !empty($multi_x) ) {
         for( $i=1; $i<=12; $i++ ) {
+            echo"<p>";
             echo "$multi_x x {$i} = ".( $multi_x *$i)."<br/>";
+            echo"</p>";
         }
     }
     ?>       
-    </tr>   
-        </tbody> 
-    </table>
-   
-    <style>
-        table {
-            width: 150px;
-            height: 265px;
-        }
-    </style>
+    </div>
 </body>
 </html>
