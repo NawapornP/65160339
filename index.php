@@ -7,8 +7,8 @@
     <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
     <style>
         .scroll {
-            width: 150px;
-            height: 265px;
+            width: 400px;
+            height: 365px;
             border: 1px solid black; 
             overflow:auto; 
         }
@@ -17,9 +17,9 @@
             <tr>
             <?php
             if( !empty($multi_x) ) {
-        for( $i=1; $i<=12; $i++ ) {
+        for( $i=1; $i<=24; $i++ ) {
             echo"<p>";
-            echo "$multi_x x {$i} = ".( $multi_x *$i)."<br/>";
+            echo"&emsp;$multi_x x {$i} = ".( $multi_x *$i)."<br/>";
             echo"</p>";
         }
     }
