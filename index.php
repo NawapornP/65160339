@@ -9,7 +9,6 @@
         .scroll {
             width: 150px;
             height: 265px;
-            
             border: 1px solid black; 
             overflow:auto; 
         }
