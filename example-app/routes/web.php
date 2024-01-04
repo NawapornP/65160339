@@ -18,9 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/my-route',function(){
-$data = [ 'val_a' => 'Multiplication' ];
-$data [ 'val_b' ]= "Table" ;
-    return view('myfolder.mypage',$data);
+
+    return view('myfolder.mypage');
 });
 Route::post('/my-route',function(Request $reg){
     $data['myinput'] = $reg->input('myinput');

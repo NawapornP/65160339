@@ -5,13 +5,16 @@
 <body>
     <?php $multi_x = 2; ?>
     <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+    
     <style>
         .scroll {
             width: 400px;
             height: 365px;
             border: 1px solid black; 
             overflow:auto; 
+            
         }
+        
     </style>
     <div class="scroll">
             <tr>
