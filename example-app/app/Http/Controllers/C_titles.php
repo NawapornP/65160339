@@ -11,6 +11,7 @@ class C_titles extends Controller
      */
     public function index()
     {
+        
        $data['titles'] = M_titles::all();
         return view('titles.index', $data);
     }
